@@ -1,0 +1,166 @@
+* {
+    /* border: solid 1px red; */
+    margin: 0px;
+    padding: 0px;    
+}
+
+body{
+    background-color: rgb(243, 242, 242);
+    
+
+}
+
+.topBar {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: black;
+    height: 50px;    
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    padding-top: 20px;
+    display: none;
+    position: absolute;
+    width: 99vw;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    background-color: white;
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: grey;
+}
+
+#buttonDropdown {
+    border: 0px;
+    height: 25px;
+}
+
+
+.barIcons {
+    height: 25px;
+}
+
+#car{
+    height: 42px;
+}
+
+.productNameContainer {
+    margin: 20px;
+}
+
+.summaryContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+    border: solid 2px grey;
+    border-radius: 10px;
+    margin: 20px; 
+    width: 87vw;
+}
+
+.productImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+}
+
+#productImage {
+    height: 40px;
+}
+
+.productInfoContainer {
+    margin-left: 8px;
+    width: 60vw;
+}
+
+#productCharacteristics {
+    margin-top: 6px;
+    font-size: 9px;
+}
+
+.amountButtons {
+    border: 0px;
+}
+#amountInput {
+    width: 15px;
+}
+
+.invoiceInfoContainer {
+    margin: 20px;
+}
+
+.form {
+    padding: 2px;
+    margin: 3px;
+}
+#submitPurchase {
+    padding: 5px;
+}
+#submitPurchaseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#totalSpan {
+    font-weight: bold;
+}
+
+#invoiceDetails {
+    margin-bottom: 10px;
+}
+
+#fname {
+    width: 65%;
+}
+
+#fid {
+    width: 40%;
+}
+
+#fother {
+    margin-top: 10px;
+    width: 80%;
+}
+
+#fprovince {
+    width: 50%;
+}
+
+#fcity {
+    width: 40%;
+}
+#fneighborhood {
+    width: 30%;
+}
+
+

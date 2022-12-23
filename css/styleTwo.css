@@ -1,0 +1,134 @@
+* {
+    /* border: solid 1px black; */
+    margin: 0px;
+    padding: 0px;    
+}
+
+body{
+    background-color: rgb(243, 242, 242);
+    width: 100vw;
+    
+
+}
+
+.topBar {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: black;
+    height: 50px;    
+}
+
+.topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content {
+    padding-top: 20px;
+    display: none;
+    position: absolute;
+    width: 97vw;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    background-color: white;
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: grey;
+}
+
+#buttonDropdown {
+    border: 0px;
+    height: 25px;
+}
+
+.barIcons {
+    height: 25px;
+}
+
+#car{
+    height: 42px;
+}
+
+.productNameContainer {
+    margin: 20px;
+}
+
+#productDescription {
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.mainImage {
+    width: 55%;
+}
+
+.mainImageContainer {
+    background-color: white;
+    margin: 20px; 
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productCharacteristics {
+    font-weight: 100;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#productCharacteristicsTitle {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.selectionContainer {
+    padding: 10px;
+    border: solid 2px grey;
+    border-radius: 10px;
+    margin: 20px; 
+    width: 84vw;
+}
+
+label {
+    margin: 2px;
+    font-size: small;
+}
+
+.optionsTitle {
+    margin-bottom: 5px;
+}
+
+.addButtonContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addButton {
+    padding: 5px;
+    border-radius: 7px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleThree.css">
+    <title>Carrito de Compras</title>
+</head>
+<body>
+    <div class="topBar">
+        <ul class="topHeader">
+
+
+
+            <li class="leftMenu" class="topHeader">
+                <div class="dropdown">
+                    <button id="buttonDropdown"><img class="barIcons" src="./images/leftMenuIcon.png"></button>
+                    <div class="dropdown-content">
+                        <a href="https://www.amazon.com/ref=nav_logo">Zapatos</a>
+                        <a href="https://www.amazon.com/ref=nav_logo">Bolsos</a>
+                        <a href="https://www.amazon.com/ref=nav_logo">Ropa</a>
+                        <a href="https://www.amazon.com/ref=nav_logo">Electronicos</a>
+                    </div>
+                  </div>
+            </li>        
+
+
+
+            <li class="mainIcon" class="topHeader">
+                <a id="anchorIcon" href="./indexOne.html" target="_blank">
+                    <img class="barIcons" src="./images/imarketOfficial.png">
+                </a>
+            </li>
+            <li class="rightMenu" class="topHeader">
+                <a id="anchorCar" href="./indexThree.html" target="_blank"> 
+                    <img id="car" class="barIcons" src="./images/carIcon.jpg">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="productNameContainer">
+        <h2 id="productName">
+            Resumen
+        </h2>
+    </div>
+    <div class="summaryContainer" class="size">
+        <div class="productImageContainer">
+            <img src="./images/productOne.jpg" id="productImage">
+        </div>
+        <div class="productInfoContainer">
+            <h5 id="productName">
+                Nombre del producto
+            </h5>
+            <p id="productCharacteristics">
+                Talla: Mediana | Color: Blanco
+            </p>
+        </div>
+        <div class="amountContainer">
+            <button id="minusButton" class="amountButtons">
+                -
+            </button>
+            <input type="text" name="amount" id="amountInput" placeholder="1" style="text-align: center">
+            <button id="plusButton" class="amountButtons">
+                +
+            </button>
+        </div>        
+    </div>
+
+    <!-- Aditional produts added just to show the final resuls. Only one summary container is needed -->
+
+    <div class="summaryContainer" class="size">
+        <div class="productImageContainer">
+            <img src="./images/productOne.jpg" id="productImage">
+        </div>
+        <div class="productInfoContainer">
+            <h5 id="productName">
+                Nombre del producto
+            </h5>
+            <p id="productCharacteristics">
+                Talla: Mediana | Color: Blanco
+            </p>
+        </div>
+        <div class="amountContainer">
+            <button id="minusButton" class="amountButtons">
+                -
+            </button>
+            <input type="text" name="amount" id="amountInput" placeholder="1" style="text-align: center">
+            <button id="plusButton" class="amountButtons">
+                +
+            </button>
+        </div>        
+    </div>
+
+    <div class="summaryContainer" class="size">
+        <div class="productImageContainer">
+            <img src="./images/productOne.jpg" id="productImage">
+        </div>
+        <div class="productInfoContainer">
+            <h5 id="productName">
+                Nombre del producto
+            </h5>
+            <p id="productCharacteristics">
+                Talla: Mediana | Color: Blanco
+            </p>
+        </div>
+        <div class="amountContainer">
+            <button id="minusButton" class="amountButtons">
+                -
+            </button>
+            <input type="text" name="amount" id="amountInput" placeholder="1" style="text-align: center">
+            <button id="plusButton" class="amountButtons">
+                +
+            </button>
+        </div>        
+    </div>
+
+    <div class="summaryContainer" class="size">
+        <div class="productImageContainer">
+            <img src="./images/productOne.jpg" id="productImage">
+        </div>
+        <div class="productInfoContainer">
+            <h5 id="productName">
+                Nombre del producto
+            </h5>
+            <p id="productCharacteristics">
+                Talla: Mediana | Color: Blanco
+            </p>
+        </div>
+        <div class="amountContainer">
+            <button id="minusButton" class="amountButtons">
+                -
+            </button>
+            <input type="text" name="amount" id="amountInput" placeholder="1" style="text-align: center">
+            <button id="plusButton" class="amountButtons">
+                +
+            </button>
+        </div>        
+    </div>
+
+
+    <!-- Aditional produts added just to show the final resuls. Only one summary container is needed -->
+
+    <div class="invoiceInfoContainer">
+        <h3 id="invoiceDetails" class="form">Detalles de facturacion</h3>
+        <h5 class="form">Cliente</h5>
+
+        <form action="/scriptThree.js">
+        <input type="text" id="fname" class="form" placeholder="Nombre y apellidos">
+        <input type="text" id="fid" class="form" placeholder="Identificacion"><br><br>
+        <h5>Direccion</h5>
+        <input type="text" id="fother" class="form" placeholder="Otras senas"><br>
+        <input type="text" id="fprovince" class="form" placeholder="Provincia"><br>
+        <input type="text" id="fcity" class="form" placeholder="Canton"><br>
+        <input type="text" id="fneighborhood" class="form" placeholder="Distrito"><br><br>
+        
+
+        <p id="totalAmount">
+            <span id="totalSpan">
+                Total: 
+            </span>
+            CRC 124 99
+        </p><br>
+        <div id="submitPurchaseContainer">
+            <input type="submit" id="submitPurchase" value="Procesar Orden">
+        </div>
+        </form> 
+    </div>
+
+
+
+</body>
+</html>
+<script src="./scripts/styleThree.css"></script>
