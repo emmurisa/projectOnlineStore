@@ -5,8 +5,7 @@
 }
 
 body{
-    background-color: rgb(243, 242, 242);
-    
+    background-color: rgb(243, 242, 242);   
 
 }
 
@@ -33,7 +32,7 @@ body{
     padding-top: 20px;
     display: none;
     position: absolute;
-    width: 99vw;
+    width: 40vw;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
@@ -42,7 +41,7 @@ body{
     display: block;
 }
 
-.dropdown-content a {
+.dropdown-content p {
     background-color: white;
     display: block;
     color: #000000;
@@ -50,7 +49,7 @@ body{
     text-decoration: none;
 }
 
-.dropdown-content a:hover {
+.dropdown-content p:hover {
     color: #FFFFFF;
     background-color: grey;
 }
@@ -60,6 +59,32 @@ body{
     height: 25px;
 }
 
+.dropdownTwo-content {
+    margin-left: 40vw;
+    padding-top: 20px;
+    display: none;
+    position: absolute;
+    width: 40vw;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdownTwo-content {
+    display: block;
+}
+
+.dropdownTwo-content a {
+    background-color: white;
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdownTwo-content a:hover {
+    color: #FFFFFF;
+    background-color: grey;
+}
 
 .barIcons {
     height: 25px;
@@ -74,9 +99,11 @@ body{
 }
 
 .summaryContainer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
     padding: 5px;
     border: solid 2px grey;
     border-radius: 10px;
@@ -90,11 +117,12 @@ body{
     align-items: center;
     background-color: white;
     height: 50px;
-    width: 50px;
+    width: 70px;
 }
 
-#productImage {
+.productImage {
     height: 40px;
+    /* width: 50px; */
 }
 
 .productInfoContainer {
@@ -102,28 +130,29 @@ body{
     width: 60vw;
 }
 
-#productCharacteristics {
+.productCharacteristics {
     margin-top: 6px;
     font-size: 9px;
 }
 
-.amountButtons {
-    border: 0px;
-}
-#amountInput {
-    width: 15px;
-}
-
 .invoiceInfoContainer {
-    margin: 20px;
+    margin-top: 50px;
+    height: 73vh;
 }
 
 .form {
     padding: 2px;
-    margin: 3px;
+    margin: 7px;
 }
+
 #submitPurchase {
-    padding: 5px;
+    border: 1px solid black;
+    padding: 15px;
+    margin-left: 45vw;
+    font-style: normal;
+    text-decoration: none
+    
+
 }
 #submitPurchaseContainer {
     display: flex;
@@ -131,7 +160,11 @@ body{
     align-items: center;
 }
 
-#totalSpan {
+#totalAmount {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    color: rgb(255, 0, 51);
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -145,6 +178,10 @@ body{
 
 #fid {
     width: 40%;
+}
+
+#femail {
+    width: 30%;
 }
 
 #fother {
@@ -163,4 +200,33 @@ body{
     width: 30%;
 }
 
+.productName {
+    font-size: medium;
+}
 
+#submitPurchase:hover {
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.651);
+    border-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 400px) {
+
+    .summaryContainer {
+        margin: 1px; 
+    }
+    .productName {
+        font-size: small;
+    }
+    .productCharacteristics {
+        font-size: 8px;
+        width: 165px;
+    }
+    .productInfoContainer {
+        width: 170px;
+    }
+    .quantityLabels {
+        font-size: small;
+    }
+  }

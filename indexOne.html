@@ -15,11 +15,12 @@
             <li class="leftMenu" class="topHeader">
                 <div class="dropdown">
                     <button id="buttonDropdown"><img class="barIcons" src="./images/leftMenuIcon.png"></button>
-                    <div class="dropdown-content">
-                        <a href="https://www.amazon.com/ref=nav_logo">Zapatos</a>
-                        <a href="https://www.amazon.com/ref=nav_logo">Bolsos</a>
-                        <a href="https://www.amazon.com/ref=nav_logo">Ropa</a>
-                        <a href="https://www.amazon.com/ref=nav_logo">Electronicos</a>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <!-- CATEGORIAS AGREGADAS CON FILES ILUSTRATIVOS EN LA ETAPA DE DISENNO
+                        <a id="categoryOne" href="https://www.amazon.com/ref=nav_logo">Zapatos</a>
+                        <a id="categoryTwo" href="https://www.amazon.com/ref=nav_logo">Bolsos</a>
+                        <a id="categoryThree" href="https://www.amazon.com/ref=nav_logo">Ropa</a>
+                        <a id="categoryFour" href="https://www.amazon.com/ref=nav_logo">Electronicos</a> -->
                     </div>
                   </div>
             </li>
@@ -32,6 +33,8 @@
                 <a id="anchorCar" href="./indexThree.html" target="_blank">
                     <img id="car" class="barIcons" src="./images/carIcon.jpg">
                 </a>
+                <div id="dropdownCar" class="dropdownCar-content">
+                </div>
             </li>
         </ul>
     </div>
@@ -41,64 +44,64 @@
         </a>
     </div>
     <div class="productsContainer">
-            <div id="productOne" class="products">
-                <a id="anchorProductOne" href="./indexTwo.html" target="_blank">
-                    <img class="productsImage" src="./images/productOne.jpg">
+            <div id="productOne" class="products" class="defaultProducts">
+                <a class="anchorProduct" href="./indexTwo.html" target="_blank">
+                    <img id="productOneImage" class="productsImage">
                 </a>
                 <div class="productInfoContainer">
-                    <p class="productName">
-                        Terra Backpack
+                    <p id="productOneName" class="productName">
+                        Nombre del producto
                     </p>
-                    <p class="productPrice">
-                        $89 900
+                    <p id="productOnePrice" class="productPrice">
+                        Precio
                     </p>
                     <button class="addButton">
                         Agregar
                     </button>
                 </div>
             </div>
-            <div id="productTwo" class="products">
-                <a id="anchorProductOne" href="./indexTwo.html" target="_blank">
-                    <img class="productsImage" src="./images/productOne.jpg">
+            <div id="productTwo" class="products" class="defaultProducts">
+                <a class="anchorProduct" href="./indexTwo.html" target="_blank">
+                    <img id="productTwoImage" class="productsImage">
                 </a>
                 <div class="productInfoContainer">
-                    <p class="productName">
-                        Terra Backpack
+                    <p id="productTwoName" class="productName">
+                        Nombre del producto
                     </p>
-                    <p class="productPrice">
-                        $89 900
+                    <p id="productTwoPrice" class="productPrice">
+                        Precio
                     </p>
                     <button class="addButton">
                         Agregar
                     </button>
                 </div>
             </div>
-            <div id="productThree" class="products">
-                <a id="anchorProductOne" href="./indexTwo.html" target="_blank">
-                    <img class="productsImage" src="./images/productOne.jpg">
+            <div id="productThree" class="products" class="defaultProducts">
+                <a class="anchorProduct" href="./indexTwo.html" target="_blank">
+                    <img id="productThreeImage" class="productsImage">
                 </a>
                 <div class="productInfoContainer">
-                    <p class="productName">
-                        Terra Backpack
+                    <p id="productThreeName" class="productName">
+                        Nombre del producto
                     </p>
-                    <p class="productPrice">
-                        $89 900
+                    <p id="productThreePrice" class="productPrice">
+                        Precio
                     </p>
                     <button class="addButton">
                         Agregar
                     </button>
                 </div>
             </div>
-            <div id="productFour" class="products">
-                <a id="anchorProductOne" href="./indexTwo.html" target="_blank">
-                    <img class="productsImage" src="./images/productOne.jpg">
+            <div id="productFour" class="products" class="defaultProducts">
+                <a class="anchorProduct" href="./indexTwo.html" target="_blank">
+                    <img id="productFourImage" class="productsImage">
                 </a>
                 <div class="productInfoContainer">
-                    <p class="productName">
-                        Terra Backpack
+                    <p id="productFourName" class="productName">
+                        Nombre del producto
                     </p>
-                    <p class="productPrice">
-                        $89 900
+                    <p id="productFourPrice" class="productPrice">
+                        Precio
                     </p>
                     <button class="addButton">
                         Agregar
@@ -128,7 +131,29 @@
 
         </a>
     </div>
+
+    <div id="content">
+
+    </div>
 </body>
 </html>
 <script src="./scripts/scriptOne.js">
 </script>
+
+
+<!-- <div id="productOne" class="products">
+    <a id="anchorProductOne" href="./indexTwo.html" target="_blank">
+        <img class="productsImage" src="./images/productOne.jpg">
+    </a>
+    <div class="productInfoContainer">
+        <p class="productName">
+            Terra Backpack
+        </p>
+        <p class="productPrice">
+            $89 900
+        </p>
+        <button class="addButton">
+            Agregar
+        </button>
+    </div>
+</div> -->

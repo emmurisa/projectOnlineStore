@@ -10,30 +10,31 @@
 <body>
     <div class="topBar">
         <ul class="topHeader">
-
-
-
             <li class="leftMenu" class="topHeader">
                 <div class="dropdown">
                     <button id="buttonDropdown"><img class="barIcons" src="./images/leftMenuIcon.png"></button>
-                    <div class="dropdown-content">
-                        <a href="https://www.amazon.com/ref=nav_logo">Zapatos</a>
-                        <a href="https://www.amazon.com/ref=nav_logo">Bolsos</a>
-                        <a href="https://www.amazon.com/ref=nav_logo">Ropa</a>
-                        <a href="https://www.amazon.com/ref=nav_logo">Electronicos</a>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <!-- CATEGORIAS AGREGADAS CON FILES ILUSTRATIVOS EN LA ETAPA DE DISENNO
+                        <p>Zapatos</p>                            
+                        <p>Bolsos</p>
+                        <p>Ropa</p>
+                        <p>Electronicos</p> -->
+                    </div>
+                    <div id="dropdownTwoMenu" class="dropdownTwo-content">
+                        <a id="productOne" class="products" href="./indexTwo.html" target="_blank"></a>
+                        <a id="productTwo" class="products" href="./indexTwo.html" target="_blank"></a>
+                        <a id="productThree" class="products" href="./indexTwo.html" target="_blank"></a>
+                        <a id="productFour" class="products" href="./indexTwo.html" target="_blank"></a>
                     </div>
                   </div>
-            </li>        
-
-
-
+            </li>
             <li class="mainIcon" class="topHeader">
                 <a id="anchorIcon" href="./indexOne.html" target="_blank">
                     <img class="barIcons" src="./images/imarketOfficial.png">
                 </a>
             </li>
             <li class="rightMenu" class="topHeader">
-                <a id="anchorCar" href="./indexThree.html" target="_blank"> 
+                <a id="anchorCar" href="./indexThree.html"> 
                     <img id="car" class="barIcons" src="./images/carIcon.jpg">
                 </a>
             </li>
@@ -43,103 +44,102 @@
         <h2 id="productName">
             Resumen
         </h2>
+    <div id="productsContainer">
+
+        <!-- Elementos agregados manualmente para comprobar el funcionamiento -->
+
+        <!-- <div class="summaryContainer" class="size">
+            <div class="productImageContainer">
+                <img src="./images/productOne.jpg" class="productImage">
+            </div>
+            <div class="productInfoContainer">
+                <h5 id="productName">
+                    Nombre del producto
+                </h5>
+                <p class="productCharacteristics">
+                    Talla: Mediana | Color: Blanco
+                </p>
+            </div>
+            <div class="amountContainer">
+                <p class="quantityLabels">
+                    Cantidad: 
+                    <span class="quantityNumber">
+                        4
+                    </span> 
+                    Uni
+                </p>
+            </div>        
+        </div>
+
+        <div class="summaryContainer" class="size">
+            <div class="productImageContainer">
+                <img src="./images/productOne.jpg" class="productImage">
+            </div>
+            <div class="productInfoContainer">
+                <h5 id="productName">
+                    Nombre del producto
+                </h5>
+                <p class="productCharacteristics">
+                    Talla: Mediana | Color: Blanco
+                </p>
+            </div>
+            <div class="amountContainer">
+                <p class="quantityLabels">
+                    Cantidad: 
+                    <span class="quantityNumber">
+                        4
+                    </span> 
+                    Uni
+                </p>
+            </div>        
+        </div>
+
+        <div class="summaryContainer" class="size">
+            <div class="productImageContainer">
+                <img src="./images/productOne.jpg" class="productImage">
+            </div>
+            <div class="productInfoContainer">
+                <h5 class="productName">
+                    Nombre del producto
+                </h5>
+                <p class="productCharacteristics">
+                    Talla: Mediana | Color: Blanco
+                </p>
+            </div>
+            <div class="amountContainer">
+                <p class="quantityLabels">
+                    Cantidad: 
+                    <span class="quantityNumber">
+                        4
+                    </span> 
+                    Uni
+                </p>
+            </div>        
+        </div>
+
+        <div class="summaryContainer" class="size">
+            <div class="productImageContainer">
+                <img src="./images/productOne.jpg" class="productImage">
+            </div>
+            <div class="productInfoContainer">
+                <h5 id="productName">
+                    Nombre del producto
+                </h5>
+                <p class="productCharacteristics">
+                    Talla: Mediana | Color: Blanco
+                </p>
+            </div>
+            <div class="amountContainer">
+                <p class="quantityLabels">
+                    Cantidad: 
+                    <span class="quantityNumber">
+                        4
+                    </span> 
+                    Uni
+                </p>
+            </div>        
+        </div> -->
     </div>
-    <div class="summaryContainer" class="size">
-        <div class="productImageContainer">
-            <img src="./images/productOne.jpg" id="productImage">
-        </div>
-        <div class="productInfoContainer">
-            <h5 id="productName">
-                Nombre del producto
-            </h5>
-            <p id="productCharacteristics">
-                Talla: Mediana | Color: Blanco
-            </p>
-        </div>
-        <div class="amountContainer">
-            <button id="minusButton" class="amountButtons">
-                -
-            </button>
-            <input type="text" name="amount" id="amountInput" placeholder="1" style="text-align: center">
-            <button id="plusButton" class="amountButtons">
-                +
-            </button>
-        </div>        
-    </div>
-
-    <!-- Aditional produts added just to show the final resuls. Only one summary container is needed -->
-
-    <div class="summaryContainer" class="size">
-        <div class="productImageContainer">
-            <img src="./images/productOne.jpg" id="productImage">
-        </div>
-        <div class="productInfoContainer">
-            <h5 id="productName">
-                Nombre del producto
-            </h5>
-            <p id="productCharacteristics">
-                Talla: Mediana | Color: Blanco
-            </p>
-        </div>
-        <div class="amountContainer">
-            <button id="minusButton" class="amountButtons">
-                -
-            </button>
-            <input type="text" name="amount" id="amountInput" placeholder="1" style="text-align: center">
-            <button id="plusButton" class="amountButtons">
-                +
-            </button>
-        </div>        
-    </div>
-
-    <div class="summaryContainer" class="size">
-        <div class="productImageContainer">
-            <img src="./images/productOne.jpg" id="productImage">
-        </div>
-        <div class="productInfoContainer">
-            <h5 id="productName">
-                Nombre del producto
-            </h5>
-            <p id="productCharacteristics">
-                Talla: Mediana | Color: Blanco
-            </p>
-        </div>
-        <div class="amountContainer">
-            <button id="minusButton" class="amountButtons">
-                -
-            </button>
-            <input type="text" name="amount" id="amountInput" placeholder="1" style="text-align: center">
-            <button id="plusButton" class="amountButtons">
-                +
-            </button>
-        </div>        
-    </div>
-
-    <div class="summaryContainer" class="size">
-        <div class="productImageContainer">
-            <img src="./images/productOne.jpg" id="productImage">
-        </div>
-        <div class="productInfoContainer">
-            <h5 id="productName">
-                Nombre del producto
-            </h5>
-            <p id="productCharacteristics">
-                Talla: Mediana | Color: Blanco
-            </p>
-        </div>
-        <div class="amountContainer">
-            <button id="minusButton" class="amountButtons">
-                -
-            </button>
-            <input type="text" name="amount" id="amountInput" placeholder="1" style="text-align: center">
-            <button id="plusButton" class="amountButtons">
-                +
-            </button>
-        </div>        
-    </div>
-
-
-    <!-- Aditional produts added just to show the final resuls. Only one summary container is needed -->
 
     <div class="invoiceInfoContainer">
         <h3 id="invoiceDetails" class="form">Detalles de facturacion</h3>
@@ -147,8 +147,9 @@
 
         <form action="/scriptThree.js">
         <input type="text" id="fname" class="form" placeholder="Nombre y apellidos">
-        <input type="text" id="fid" class="form" placeholder="Identificacion"><br><br>
-        <h5>Direccion</h5>
+        <input type="text" id="fid" class="form" placeholder="Identificacion"><br>
+        <input type="text" id="femail" class="form" placeholder="Correo"><br><br>
+        <h5 class="form">Direccion</h5>
         <input type="text" id="fother" class="form" placeholder="Otras senas"><br>
         <input type="text" id="fprovince" class="form" placeholder="Provincia"><br>
         <input type="text" id="fcity" class="form" placeholder="Canton"><br>
@@ -157,18 +158,22 @@
 
         <p id="totalAmount">
             <span id="totalSpan">
-                Total: 
+                Total:
             </span>
             CRC 124 99
         </p><br>
-        <div id="submitPurchaseContainer">
+        <!-- Desactivado debido a que el procesamiento del form no ha sido implementado -->
+        <!-- <div id="submitPurchaseContainer">
             <input type="submit" id="submitPurchase" value="Procesar Orden">
-        </div>
+        </div> -->
         </form> 
+        <a id="submitPurchase" href="./indexOne.html">
+            Procesar Orden
+        </a>
     </div>
 
 
 
 </body>
 </html>
-<script src="./scripts/styleThree.css"></script>
+<script src="./scripts/scriptThree.js"></script>

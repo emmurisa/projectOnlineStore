@@ -9,18 +9,27 @@
         Product Details
     </title>
 </head>
-<body>
-    <div class="topBar">
+<body class="grid-container">
+    <div class="topBar" class="grid-item">
         <ul class="topHeader">
             <li class="leftMenu" class="topHeader">
-                <div class="dropdown">
+                <div id="dropDownDiv" class="dropdown">
                     <button id="buttonDropdown"><img class="barIcons" src="./images/leftMenuIcon.png"></button>
-                    <div class="dropdown-content">
-                        <a href="https://www.amazon.com/ref=nav_logo">Zapatos</a>
-                        <a href="https://www.amazon.com/ref=nav_logo">Bolsos</a>
-                        <a href="https://www.amazon.com/ref=nav_logo">Ropa</a>
-                        <a href="https://www.amazon.com/ref=nav_logo">Electronicos</a>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <!-- CATEGORIAS AGREGADAS CON FILES ILUSTRATIVOS EN LA ETAPA DE DISENNO
+                        <p>Zapatos</p>                            
+                        <p>Bolsos</p>
+                        <p>Ropa</p>
+                        <p>Electronicos</p> -->
                     </div>
+
+                    <div id="dropdownTwoMenu" class="dropdownTwo-content">
+                        <p id="productOne" class="products" ></p>
+                        <p id="productTwo" class="products"></p>
+                        <p id="productThree" class="products"></p>
+                        <p id="productFour" class="products"></p>
+                    </div>
+
                   </div>
             </li>
             <li class="mainIcon" class="topHeader">
@@ -32,10 +41,12 @@
                 <a id="anchorCar" href="./indexThree.html" target="_blank">
                     <img id="car" class="barIcons" src="./images/carIcon.jpg">
                 </a>
+                <div id="dropdownCar" class="dropdownCar-content">
+                </div>
             </li>
         </ul>
     </div>
-    <div class="productNameContainer">
+    <div class="productNameContainer" class="grid-item">
         <h2 id="productName">
             Nombre del producto
         </h2>
@@ -44,72 +55,72 @@
         </h4>
     </div>
     <div class="mainImageContainer">
-        <img class="mainImage" src="./images/productOne.jpg">
+        <img id="productImage" class="mainImage">
         </a>
     </div>
-    <div class="productCharacteristicsContainer">
+    <div class="productCharacteristicsContainer" class="grid-item">
         <h4 id="productCharacteristicsTitle" class="productCharacteristics">
             Caracteristicas del producto
         </h4>
-        <h5 class="productCharacteristics">
+        <h5 id="productId" class="productCharacteristics">
             - Caracteristica Uno
         </h5>
-        <h5 class="productCharacteristics">
+        <h5 id="productCategory" class="productCharacteristics">
             - Caracteristica Dos
         </h5>
-        <h5 class="productCharacteristics">
+        <h5 id="productRate" class="productCharacteristics">
             - Caracteristica Tres
         </h5>
-        <h5 class="productCharacteristics">
+        <h5 id="productCount" class="productCharacteristics">
             - Caracteristica Cuatro
         </h5>
-        <h5 class="productCharacteristics">
+        <!-- <h5 id="productId" class="productCharacteristics">
             - Caracteristica Cinco
-        </h5>
+        </h5> -->
     </div>
-    <div class="selectionContainer" class="size">
+    <div class="selectionContainer" class="size" class="grid-item">
         <h5 class="optionsTitle" class="size">
             Color
         </h5>
         <label for="colorOne">
             Color Uno
         </label>
-        <input type="radio" id="colorOne">
+        <input type="radio" id="colorOne" disabled>
         <label for="colorTwo">
             Color Dos
         </label>
-        <input type="radio" id="colorTwo">
+        <input type="radio" id="colorTwo" disabled>
         <label for="colorThree">
             Color Tres
         </label>
-        <input type="radio" id="colorThree">
+        <input type="radio" id="colorThree" disabled>
         <label for="colorFour">
             Color Cuatro
         </label>
-        <input type="radio" id="colorFour">
+        <input type="radio" id="colorFour" disabled>
     </div>
-    <div class="selectionContainer" class="size">
+    <div class="selectionContainer" class="size" class="grid-item">
         <h5 class="optionsTitle" class="size">
             Talla
         </h5>
         <label for="sizeOne">
             Talla Uno
         </label>
-        <input type="radio" id="sizeOne">
+        <input type="radio" id="sizeOne" disabled>
         <label for="sizeTwo">
             Talla Dos
         </label>
-        <input type="radio" id="sizeTwo">
+        <input type="radio" id="sizeTwo" disabled>
         <label for="sizeThree">
             Talla Tres
         </label>
-        <input type="radio" id="sizeThree">
+        <input type="radio" id="sizeThree" disabled>
         <label for="sizeFour">
             Talla Cuatro
         </label>
-        <input type="radio" id="sizeFour">
+        <input type="radio" id="sizeFour" disabled>
     </div>
-    <div class="addButtonContainer">
+    <div class="addButtonContainer" class="grid-item">
         <button id="addButton">
             Agregar
         </button>

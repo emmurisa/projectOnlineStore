@@ -3,11 +3,12 @@
     margin: 0px;
     padding: 0px;    
 }
-
-body{
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
     background-color: rgb(243, 242, 242);
-    width: 100vw;
-    
+    width: 100%;
+    height: 830px;
 
 }
 
@@ -34,7 +35,7 @@ body{
     padding-top: 20px;
     display: none;
     position: absolute;
-    width: 97vw;
+    width: 40vw;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
@@ -43,7 +44,7 @@ body{
     display: block;
 }
 
-.dropdown-content a {
+.dropdown-content p {
     background-color: white;
     display: block;
     color: #000000;
@@ -51,7 +52,7 @@ body{
     text-decoration: none;
 }
 
-.dropdown-content a:hover {
+.dropdown-content p:hover {
     color: #FFFFFF;
     background-color: grey;
 }
@@ -59,6 +60,33 @@ body{
 #buttonDropdown {
     border: 0px;
     height: 25px;
+}
+
+.dropdownTwo-content {
+    margin-left: 40vw;
+    padding-top: 20px;
+    display: none;
+    position: absolute;
+    width: 40vw;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdownTwo-content {
+    display: block;
+}
+
+.dropdownTwo-content p {
+    background-color: white;
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.dropdownTwo-content p:hover {
+    color: #FFFFFF;
+    background-color: grey;
 }
 
 .barIcons {
@@ -81,19 +109,22 @@ body{
 }
 
 .mainImage {
-    width: 55%;
+    width: 17vw;
 }
 
 .mainImageContainer {
     background-color: white;
-    margin: 20px; 
+    margin: 3%; 
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
+    width: 90vw;
 }
 
 .productCharacteristics {
+    margin: 4px;
     font-weight: 100;
     margin-left: 20px;
     margin-right: 20px;
@@ -122,13 +153,63 @@ label {
 }
 
 .addButtonContainer {
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #addButton {
-    padding: 5px;
     border-radius: 7px;
+    padding: 10px;
+    width: 100px;
 }
+
+
+.dropdownCar-content {
+    margin-left: -8vw;
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+    width: 14vw;
+    overflow: auto;
+}
+
+.dropdownCar-content {
+    display: block;
+}
+
+.dropdownCar-content p {
+    background-color: rgba(0, 0, 0, 0.055);
+    display: block;
+    color: #e90c0c;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#addButton:hover {
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.651);
+    border-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 930px) {
+    .mainImage {
+        width: 37vw;
+    }
+    .addButtonContainer {
+        margin-top: -1px;
+    }
+    .mainImageContainer {
+        height: 27vh;
+        width: 86vw;
+    }
+    .dropdownCar-content {
+        width: 20vw;
+
+    }
+    .dropdownCar-content p {
+        font-size: small;
+    }
+  }

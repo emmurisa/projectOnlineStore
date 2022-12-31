@@ -1,12 +1,13 @@
 * {
     /* border: solid 1px black; */
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;
+
 }
 
 body{
     background-color: rgb(243, 242, 242);
-
+    width: 100%;   
 }
 
 .topBar {
@@ -33,7 +34,7 @@ body{
     padding-top: 20px;
     display: none;
     position: absolute;
-    width: 97vw;
+    width: 580%;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
@@ -42,15 +43,15 @@ body{
     display: block;
 }
 
-.dropdown-content a {
-    background-color: white;
+.dropdown-content p {
+    background-color: rgb(255, 255, 255);
     display: block;
     color: #000000;
     padding: 5px;
     text-decoration: none;
 }
 
-.dropdown-content a:hover {
+.dropdown-content p:hover {
     color: #FFFFFF;
     background-color: grey;
 }
@@ -59,6 +60,30 @@ body{
     border: 0px;
     height: 25px;
 }
+
+
+.dropdownCar-content {
+    margin-left: -5vw;
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+    width: 17vw;
+    overflow: auto;
+
+}
+
+.dropdownCar-content {
+    display: block;
+}
+
+.dropdownCar-content p {
+    background-color: rgba(12, 12, 12, 0.541);
+    display: block;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+}
+
 
 .barIcons {
     height: 25px;
@@ -78,7 +103,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    height: 510px;
+    height: 150vh;
     width: 100%;
 }
 
@@ -88,16 +113,16 @@ body{
     justify-content: center;
     align-items: center;
     width: 43%;
-    height: 47%;
+    height: 50%;
     column-gap: 70px;
 
 }
 
 .productsImage {
-    height: 85%;
+    height: 45%;
 }
 
-#anchorProductOne {
+.anchorProduct {
     height: 60%;
     width: 100%;
     background-color: rgb(255, 255, 255);
@@ -106,12 +131,22 @@ body{
     justify-content: center;
 } 
 
+.productName{
+    font-size: 200%;
+
+}
+
 .productPrice{
+    font-size: 180%;
+    margin-top: 5px;
     color: grey;
 }
 
 .addButton{
-    padding: 3px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 150px;
+    font-size: large;
 }
 
 .productInfoContainer {
@@ -124,18 +159,71 @@ body{
     justify-content: center;
     align-items: center;
     height: 46px;
+    margin-top: 5%;
 }
 
 .contactInformation{
     display: inline-block;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .mediaIcons {
-    margin: 2px;
-    height: 17px;
+    margin-left: 10px;
+    height: 25px;
 }
 
 #facebookIcon {
     margin-left: 7px;
 }
+
+@media only screen and (max-width: 930px) {
+    .productsContainer{
+        align-items: flex-start;
+        margin-top: 5px;
+        height: 510px;
+    }
+    
+    .products {
+        height: 25px;
+    }
+
+    .anchorProduct {
+        height: 165px;
+        margin-bottom: 10px;
+    } 
+
+    .productName{
+        font-size: 80%;
+    
+    }
+    
+    .productPrice{
+        font-size: 75%;
+    }
+
+    .addButton{
+        margin-top: 5px;
+        padding: 3px;
+        width: 80px;
+        font-size: small;
+    }
+
+    .contactInformation{
+        font-size: 10px;
+    }
+    
+    .mediaIcons {
+        margin-left: 5px;
+        height: 15px;
+    }
+    .dropdownCar-content {
+        margin-left: -8vw;
+        width: 20vw;
+        font-size: small;
+
+    
+    }
+
+
+
+  }
