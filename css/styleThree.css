@@ -150,8 +150,7 @@ body{
     padding: 15px;
     margin-left: 45vw;
     font-style: normal;
-    text-decoration: none
-    
+    text-decoration: none    
 
 }
 #submitPurchaseContainer {
@@ -228,5 +227,9 @@ body{
     }
     .quantityLabels {
         font-size: small;
+    }
+    #submitPurchase {
+        padding: 10px;
+        margin-left: 30vw;
     }
   }
