@@ -6,6 +6,7 @@
 
 body{
     background-color: rgb(243, 242, 242);   
+    width: 100%;
 
 }
 
@@ -231,5 +232,17 @@ body{
     #submitPurchase {
         padding: 10px;
         margin-left: 30vw;
+    }
+    .dropdown-content {
+        width: 460%
+    }
+    .categoryImported {
+        font-size: small;
+    }
+    .products{
+        font-size: small;
+    }
+    .dropdownTwo-content {
+        margin-left: 36vw;
     }
   }

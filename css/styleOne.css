@@ -219,11 +219,12 @@ body{
     .dropdownCar-content {
         margin-left: -8vw;
         width: 20vw;
-        font-size: small;
-
-    
+        font-size: small;    
     }
-
-
-
+    .dropdown-content {
+        width: 460%;
+    }
+    .categoryImported {
+        font-size: small;
+    }
   }

@@ -212,4 +212,16 @@ label {
     .dropdownCar-content p {
         font-size: small;
     }
+    .dropdown-content {
+        width: 460%
+    }
+    .categoryImported {
+        font-size: small;
+    }
+    .products{
+        font-size: small;
+    }
+    .dropdownTwo-content {
+        margin-left: 36vw;
+    }
   }

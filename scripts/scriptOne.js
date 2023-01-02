@@ -106,7 +106,7 @@ function createpage(data) {
                 setTimeout(function(){ contenedor.removeChild(addedMessage); }, 3000);
 
             })
-        })
+        })            
 }
 
  //El siguiente codigo se encarga de actualizar el array de productos mostrados en la pagina principal de acuerdo a la categoria elegida por el usuario.
