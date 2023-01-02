@@ -60,8 +60,8 @@ function createpage(data) {
                     function checkAdult(d) {
                         return d.title.slice(0, 29) === elem.path[0].innerText;
                     }
-                    document.getElementById("productName").innerText = array[0].title;
-                    document.getElementById("productDescription").innerText = array[0].description;
+                    document.getElementById("productName").innerText = array[0].title.slice(0, 27);
+                    document.getElementById("productDescription").innerText = array[0].description.slice(0, 150);
                     document.getElementById("productImage").src = array[0].image;
                     document.getElementById("productId").innerText = `- Id: ${array[0].id}`;
                     document.getElementById("productCategory").innerText = `- Category: ${array[0].category}`;
@@ -75,13 +75,15 @@ function createpage(data) {
 
     //Primer producto del API cargado en el DOM as a default product
 
-    document.getElementById("productName").innerText = data[0].title;
-    document.getElementById("productDescription").innerText = data[0].description;
-    document.getElementById("productImage").src = data[0].image;
-    document.getElementById("productId").innerText = `- Id: ${data[0].id}`;
-    document.getElementById("productCategory").innerText = `- Category: ${data[0].category}`;
-    document.getElementById("productRate").innerText = `- Rate: ${data[0].rating.rate}`;
-    document.getElementById("productCount").innerText = `- Count: ${data[0].rating.count}`;
+    let ramdomNumber = Math.floor(Math.random(100) * 16);
+
+    document.getElementById("productName").innerText = data[ramdomNumber].title.slice(0, 27);
+    document.getElementById("productDescription").innerText = data[ramdomNumber].description.slice(0, 150);
+    document.getElementById("productImage").src = data[ramdomNumber].image;
+    document.getElementById("productId").innerText = `- Id: ${data[ramdomNumber].id}`;
+    document.getElementById("productCategory").innerText = `- Category: ${data[ramdomNumber].category}`;
+    document.getElementById("productRate").innerText = `- Rate: ${data[ramdomNumber].rating.rate}`;
+    document.getElementById("productCount").innerText = `- Count: ${data[ramdomNumber].rating.count}`;
 
     //Codigo encargado de mostrar la leyenda de agregado al clickear el boton de agregar producto.
     document.getElementById("addButton").addEventListener("click", elem => {

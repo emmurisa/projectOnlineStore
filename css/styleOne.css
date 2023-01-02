@@ -227,4 +227,7 @@ body{
     .categoryImported {
         font-size: small;
     }
+    .contactInformationContainer{
+        margin-top: 5px;
+    }
   }

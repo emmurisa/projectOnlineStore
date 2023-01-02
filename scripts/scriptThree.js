@@ -119,12 +119,12 @@ function createpageTwo(carts) {
 
         let productName = document.createElement("h5");
         productName.className = "productName";
-        productName.innerText = searchProductById(element.productId).title;
+        productName.innerText = searchProductById(element.productId).title.slice(0, 25);
 
 
         let productDescription = document.createElement("p");
         productDescription.className = "productCharacteristics";
-        productDescription.innerText = searchProductById(element.productId).description.slice(0, 140);
+        productDescription.innerText = searchProductById(element.productId).description.slice(0, 150);
 
         let amountContainer = document.createElement("div");
         amountContainer.className = "amountContainer";

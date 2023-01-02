@@ -196,13 +196,13 @@ label {
 
 @media only screen and (max-width: 930px) {
     .mainImage {
-        width: 37vw;
+        width: 30vw;
     }
     .addButtonContainer {
         margin-top: -1px;
     }
     .mainImageContainer {
-        height: 27vh;
+        height: 20vh;
         width: 86vw;
     }
     .dropdownCar-content {
@@ -223,5 +223,10 @@ label {
     }
     .dropdownTwo-content {
         margin-left: 36vw;
+    }
+    .selectionContainer {
+        margin: 9px; 
+        width: 89vw;
+        height: 40px;
     }
   }
